@@ -1,0 +1,86 @@
+$date
+	Thu Sep 20 16:15:50 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module one_eight_demux_tb $end
+$var wire 8 ! y [7:0] $end
+$var reg 1 " a $end
+$var reg 1 # en $end
+$var reg 3 $ sel [2:0] $end
+$scope module oed $end
+$var wire 1 % a $end
+$var wire 1 & en $end
+$var wire 3 ' sel [2:0] $end
+$var reg 8 ( y [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+bx '
+x&
+x%
+bx $
+x#
+x"
+bx !
+$end
+#10
+bx0 (
+bx0 !
+1#
+1&
+b0 $
+b0 '
+0"
+0%
+#20
+bx1x (
+bx1x !
+b1 $
+b1 '
+1"
+1%
+#30
+bx1xx (
+bx1xx !
+b10 $
+b10 '
+#40
+bx0xxx (
+bx0xxx !
+b11 $
+b11 '
+0"
+0%
+#50
+bx1xxxx (
+bx1xxxx !
+b100 $
+b100 '
+1"
+1%
+#60
+bx1xxxxx (
+bx1xxxxx !
+b101 $
+b101 '
+#70
+bx0xxxxxx (
+bx0xxxxxx !
+b110 $
+b110 '
+0"
+0%
+#80
+b0xxxxxxx (
+b0xxxxxxx !
+b111 $
+b111 '
+#100

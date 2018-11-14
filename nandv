@@ -1,0 +1,50 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0xe55730 .scope module, "cmos_nand_tb" "cmos_nand_tb" 2 1;
+ .timescale 0 0;
+v0xe9afa0_0 .var "a1", 0 0;
+v0xe9b050_0 .var "b1", 0 0;
+RS_0x7f4d4fc73108 .resolv tri, L_0xe9b400, L_0xe9b550, L_0xe9b600, C4<z>;
+v0xe9b100_0 .net8 "out", 0 0, RS_0x7f4d4fc73108; 3 drivers, strength-aware
+S_0xe55820 .scope module, "n" "cmos_nand" 2 16, 3 2, S_0xe55730;
+ .timescale 0 0;
+L_0xe9b2d0 .functor NMOS 1, C8<770>, v0xe9b050_0, C4<0>, C4<0>;
+L_0xe9b400 .functor NMOS 1, L_0xe9b2d0, v0xe9afa0_0, C4<0>, C4<0>;
+L_0xe9b550 .functor PMOS 1, C8<771>, v0xe9b050_0, C4<0>, C4<0>;
+L_0xe9b600 .functor PMOS 1, C8<771>, v0xe9afa0_0, C4<0>, C4<0>;
+v0xe8b010_0 .net "a", 0 0, v0xe9afa0_0; 1 drivers
+v0xe9ac30_0 .net "b", 0 0, v0xe9b050_0; 1 drivers
+v0xe9acd0_0 .net8 "gnd", 0 0, C8<770>; 1 drivers, strength-aware
+v0xe9ad70_0 .net8 "vdd", 0 0, C8<771>; 1 drivers, strength-aware
+v0xe9ae20_0 .net8 "w", 0 0, L_0xe9b2d0; 1 drivers, strength-aware
+v0xe9aec0_0 .alias "y", 0 0, v0xe9b100_0;
+    .scope S_0xe55730;
+T_0 ;
+    %vpi_call 2 6 "$dumpfile", "nandtb";
+    %vpi_call 2 7 "$dumpvars", 1'sb0, S_0xe55730;
+    %vpi_call 2 8 "$display", "in1,in2,out";
+    %vpi_call 2 9 "$monitor", "%b %b %b", v0xe9afa0_0, v0xe9b050_0, v0xe9b100_0;
+    %delay 20, 0;
+    %set/v v0xe9afa0_0, 0, 1;
+    %set/v v0xe9b050_0, 0, 1;
+    %delay 20, 0;
+    %set/v v0xe9afa0_0, 0, 1;
+    %set/v v0xe9b050_0, 1, 1;
+    %delay 20, 0;
+    %set/v v0xe9afa0_0, 1, 1;
+    %set/v v0xe9b050_0, 0, 1;
+    %delay 20, 0;
+    %set/v v0xe9afa0_0, 1, 1;
+    %set/v v0xe9b050_0, 1, 1;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "cmos_nand_tb.c";
+    "cmos_nand.c";

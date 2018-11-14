@@ -1,0 +1,36 @@
+$date
+	Thu Aug 30 16:30:20 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module cmos_not_tb $end
+$var wire 1 ! out $end
+$var reg 1 " a1 $end
+$scope module n $end
+$var wire 1 # a $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1%
+0$
+x#
+x"
+x!
+$end
+#20
+1"
+0!
+1#
+#40
+0"
+1!
+0#

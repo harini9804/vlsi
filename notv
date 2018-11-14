@@ -1,0 +1,37 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x272e730 .scope module, "cmos_not_tb" "cmos_not_tb" 2 1;
+ .timescale 0 0;
+v0x2771c80_0 .var "a1", 0 0;
+RS_0x7ffadd6700a8 .resolv tri, L_0x2771f20, L_0x2772070, C4<z>, C4<z>;
+v0x2771d50_0 .net8 "out", 0 0, RS_0x7ffadd6700a8; 2 drivers, strength-aware
+S_0x272e820 .scope module, "n" "cmos_not" 2 15, 3 1, S_0x272e730;
+ .timescale 0 0;
+L_0x2771f20 .functor NMOS 1, C8<770>, v0x2771c80_0, C4<0>, C4<0>;
+L_0x2772070 .functor PMOS 1, C8<771>, v0x2771c80_0, C4<0>, C4<0>;
+v0x2740cb0_0 .net "a", 0 0, v0x2771c80_0; 1 drivers
+v0x2771a90_0 .net8 "gnd", 0 0, C8<770>; 1 drivers, strength-aware
+v0x2771b30_0 .net8 "vcc", 0 0, C8<771>; 1 drivers, strength-aware
+v0x2771bd0_0 .alias "y", 0 0, v0x2771d50_0;
+    .scope S_0x272e730;
+T_0 ;
+    %vpi_call 2 6 "$dumpfile", "nottb";
+    %vpi_call 2 7 "$dumpvars", 1'sb0, S_0x272e730;
+    %vpi_call 2 8 "$display", "in1, out";
+    %vpi_call 2 9 "$monitor", "%b %b", v0x2771c80_0, v0x2771d50_0;
+    %delay 20, 0;
+    %set/v v0x2771c80_0, 1, 1;
+    %delay 20, 0;
+    %set/v v0x2771c80_0, 0, 1;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "cmos_not_tb.c";
+    "cmos_not.c";

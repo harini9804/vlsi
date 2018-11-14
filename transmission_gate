@@ -1,0 +1,74 @@
+$date
+	Thu Sep  6 16:17:58 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module transmission_gate_tb $end
+$var wire 1 ! y $end
+$var reg 1 " a $end
+$var reg 1 # g1 $end
+$var reg 1 $ g2 $end
+$scope module tg $end
+$var wire 1 % a $end
+$var wire 1 & g1 $end
+$var wire 1 ' g2 $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#20
+0$
+0'
+0#
+0&
+0"
+0!
+0%
+#40
+1$
+z!
+1'
+#60
+0$
+0'
+1#
+0!
+1&
+#80
+1$
+1'
+#100
+0$
+0'
+0#
+0&
+1"
+1!
+1%
+#120
+1$
+z!
+1'
+#140
+0$
+0'
+1#
+1!
+1&
+#160
+1$
+1'

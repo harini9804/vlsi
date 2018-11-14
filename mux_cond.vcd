@@ -1,0 +1,103 @@
+$date
+	Thu Sep 27 15:42:35 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux_cond_tb $end
+$var wire 1 ! y $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$var reg 1 $ en $end
+$var reg 1 % s $end
+$scope module mcond $end
+$var wire 1 & a $end
+$var wire 1 ' b $end
+$var wire 1 ( en $end
+$var wire 1 ) s $end
+$var reg 1 * y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#20
+1*
+1!
+1$
+1(
+1%
+1)
+1#
+1'
+0"
+0&
+#40
+0%
+0)
+0#
+0'
+1"
+1&
+#60
+1%
+1)
+#80
+0%
+0)
+1#
+1'
+#100
+x*
+x!
+0$
+0(
+1%
+1)
+#120
+0*
+0!
+1$
+1(
+0%
+0)
+0#
+0'
+0"
+0&
+#140
+x*
+x!
+0$
+0(
+1%
+1)
+1#
+1'
+#160
+0*
+0!
+1$
+1(
+0#
+0'
+#180
+0%
+0)
+1#
+1'
+#10180

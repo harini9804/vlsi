@@ -1,0 +1,67 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x2007db0 .scope module, "cmos_or_tb" "cmos_or_tb" 2 1;
+ .timescale 0 0;
+v0x2019ea0_0 .var "a1", 0 0;
+v0x2019f70_0 .var "b1", 0 0;
+RS_0x7fe0cf57c0a8 .resolv tri, L_0x201a6a0, L_0x201a720, C4<z>, C4<z>;
+v0x201a040_0 .net8 "out", 0 0, RS_0x7fe0cf57c0a8; 2 drivers, strength-aware
+S_0x2007ea0 .scope module, "or1" "cmos_or" 2 17, 3 3, S_0x2007db0;
+ .timescale 0 0;
+v0x2019b90_0 .net "a", 0 0, v0x2019ea0_0; 1 drivers
+v0x2019c40_0 .net "b", 0 0, v0x2019f70_0; 1 drivers
+v0x2019cf0_0 .alias "y", 0 0, v0x201a040_0;
+RS_0x7fe0cf57c018 .resolv tri, L_0x201a290, L_0x201a340, L_0x201a570, C4<z>;
+v0x2019da0_0 .net8 "y1", 0 0, RS_0x7fe0cf57c018; 3 drivers, strength-aware
+S_0x2019690 .scope module, "nr" "cmos_nor" 3 7, 4 1, S_0x2007ea0;
+ .timescale 0 0;
+L_0x201a290 .functor NMOS 1, C8<770>, v0x2019ea0_0, C4<0>, C4<0>;
+L_0x201a340 .functor NMOS 1, C8<770>, v0x2019f70_0, C4<0>, C4<0>;
+L_0x201a450 .functor PMOS 1, C8<771>, v0x2019ea0_0, C4<0>, C4<0>;
+L_0x201a570 .functor PMOS 1, L_0x201a450, v0x2019f70_0, C4<0>, C4<0>;
+v0x2019780_0 .alias "a", 0 0, v0x2019b90_0;
+v0x2019840_0 .alias "b", 0 0, v0x2019c40_0;
+v0x20198e0_0 .net8 "gnd", 0 0, C8<770>; 1 drivers, strength-aware
+v0x2019980_0 .net8 "vcc", 0 0, C8<771>; 1 drivers, strength-aware
+v0x2019a30_0 .net8 "w", 0 0, L_0x201a450; 1 drivers, strength-aware
+v0x2019ad0_0 .alias "y", 0 0, v0x2019da0_0;
+S_0x2008c20 .scope module, "nt" "cmos_not" 3 13, 5 1, S_0x2007ea0;
+ .timescale 0 0;
+L_0x201a6a0 .functor NMOS 1, C8<770>, RS_0x7fe0cf57c018, C4<0>, C4<0>;
+L_0x201a720 .functor PMOS 1, C8<771>, RS_0x7fe0cf57c018, C4<0>, C4<0>;
+v0x2008d10_0 .alias "a", 0 0, v0x2019da0_0;
+v0x20194a0_0 .net8 "gnd", 0 0, C8<770>; 1 drivers, strength-aware
+v0x2019540_0 .net8 "vcc", 0 0, C8<771>; 1 drivers, strength-aware
+v0x20195e0_0 .alias "y", 0 0, v0x201a040_0;
+    .scope S_0x2007db0;
+T_0 ;
+    %vpi_call 2 6 "$dumpfile", "ortb";
+    %vpi_call 2 7 "$dumpvars", 1'sb0, S_0x2007db0;
+    %vpi_call 2 8 "$display", "in1, in2 out";
+    %vpi_call 2 9 "$monitor", "%b %b %b", v0x2019ea0_0, v0x2019f70_0, v0x201a040_0;
+    %delay 20, 0;
+    %set/v v0x2019ea0_0, 0, 1;
+    %set/v v0x2019f70_0, 0, 1;
+    %delay 20, 0;
+    %set/v v0x2019ea0_0, 0, 1;
+    %set/v v0x2019f70_0, 1, 1;
+    %delay 20, 0;
+    %set/v v0x2019ea0_0, 1, 1;
+    %set/v v0x2019f70_0, 0, 1;
+    %delay 20, 0;
+    %set/v v0x2019ea0_0, 1, 1;
+    %set/v v0x2019f70_0, 1, 1;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 6;
+    "N/A";
+    "<interactive>";
+    "cmos_or_tb.c";
+    "cmos_or.c";
+    "./cmos_nor.c";
+    "./cmos_not.c";

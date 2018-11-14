@@ -1,0 +1,112 @@
+$date
+	Thu Sep 20 15:20:51 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module eight_one_mux_tb $end
+$var wire 1 ! y $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$var reg 1 $ c $end
+$var reg 1 % d $end
+$var reg 1 & e $end
+$var reg 1 ' f $end
+$var reg 1 ( g $end
+$var reg 1 ) h $end
+$var reg 3 * sel [2:0] $end
+$scope module eom $end
+$var wire 1 + a $end
+$var wire 1 , b $end
+$var wire 1 - c $end
+$var wire 1 . d $end
+$var wire 1 / e $end
+$var wire 1 0 f $end
+$var wire 1 1 g $end
+$var wire 1 2 h $end
+$var wire 3 3 sel [2:0] $end
+$var reg 1 4 y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x4
+bx 3
+x2
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+bx *
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#10
+04
+0!
+b0 *
+b0 3
+0)
+02
+1(
+11
+0'
+00
+1&
+1/
+0%
+0.
+1$
+1-
+0#
+0,
+0"
+0+
+#20
+b1 *
+b1 3
+#30
+14
+1!
+b10 *
+b10 3
+#40
+04
+0!
+b11 *
+b11 3
+#50
+14
+1!
+b100 *
+b100 3
+#60
+04
+0!
+b101 *
+b101 3
+#70
+14
+1!
+b110 *
+b110 3
+#80
+04
+0!
+b111 *
+b111 3
+#100

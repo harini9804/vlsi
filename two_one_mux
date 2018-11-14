@@ -1,0 +1,213 @@
+$date
+	Thu Sep  6 16:17:34 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module two_one_mux_tb $end
+$var wire 1 ! out $end
+$var reg 1 " a1 $end
+$var reg 1 # b1 $end
+$var reg 1 $ s $end
+$scope module tom $end
+$var wire 1 % a $end
+$var wire 1 & b $end
+$var wire 1 ' p1 $end
+$var wire 1 ( p2 $end
+$var wire 1 ) s $end
+$var wire 1 * snot $end
+$var wire 1 ! y $end
+$scope module n1mux $end
+$var wire 1 ) a $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 * y $end
+$upscope $end
+$scope module an1mux $end
+$var wire 1 * a $end
+$var wire 1 % b $end
+$var wire 1 ' y $end
+$var wire 1 - y1 $end
+$scope module n $end
+$var wire 1 * a $end
+$var wire 1 % b $end
+$var wire 1 . gnd $end
+$var wire 1 / vdd $end
+$var wire 1 0 w $end
+$var wire 1 - y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 - a $end
+$var wire 1 1 gnd $end
+$var wire 1 2 vcc $end
+$var wire 1 ' y $end
+$upscope $end
+$upscope $end
+$scope module an2mux $end
+$var wire 1 ) a $end
+$var wire 1 & b $end
+$var wire 1 ( y $end
+$var wire 1 3 y1 $end
+$scope module n $end
+$var wire 1 ) a $end
+$var wire 1 & b $end
+$var wire 1 4 gnd $end
+$var wire 1 5 vdd $end
+$var wire 1 6 w $end
+$var wire 1 3 y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 3 a $end
+$var wire 1 7 gnd $end
+$var wire 1 8 vcc $end
+$var wire 1 ( y $end
+$upscope $end
+$upscope $end
+$scope module ormux $end
+$var wire 1 ' a $end
+$var wire 1 ( b $end
+$var wire 1 ! y $end
+$var wire 1 9 y1 $end
+$scope module nr $end
+$var wire 1 ' a $end
+$var wire 1 ( b $end
+$var wire 1 : gnd $end
+$var wire 1 ; vcc $end
+$var wire 1 < w $end
+$var wire 1 9 y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 9 a $end
+$var wire 1 = gnd $end
+$var wire 1 > vcc $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1>
+0=
+x<
+1;
+0:
+x9
+18
+07
+x6
+15
+04
+x3
+12
+01
+x0
+1/
+0.
+x-
+1,
+0+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#20
+0$
+0)
+1*
+0#
+0&
+13
+19
+0!
+0(
+z6
+0"
+0%
+1-
+1<
+0'
+z0
+#40
+1$
+1)
+0*
+#60
+0$
+0)
+1*
+1#
+1&
+06
+13
+0(
+19
+0!
+#80
+1$
+1)
+0*
+03
+1(
+09
+1!
+#100
+0$
+0)
+1*
+0-
+1'
+z<
+0#
+0&
+z6
+13
+0(
+09
+1!
+1"
+1%
+00
+#120
+1$
+1)
+0*
+1-
+0'
+19
+0!
+1<
+#140
+0$
+0)
+1*
+0-
+1'
+z<
+1#
+1&
+06
+13
+0(
+09
+1!
+#160
+1$
+1)
+0*
+1-
+0'
+1<
+03
+1(

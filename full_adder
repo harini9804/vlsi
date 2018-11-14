@@ -1,0 +1,276 @@
+$date
+	Thu Sep  6 16:18:08 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module full_adder_tb $end
+$var wire 1 ! cout $end
+$var wire 1 " sum $end
+$var reg 1 # a1 $end
+$var reg 1 $ b1 $end
+$var reg 1 % cin $end
+$scope module fa $end
+$var wire 1 & a $end
+$var wire 1 ' b $end
+$var wire 1 ( c1 $end
+$var wire 1 ) c2 $end
+$var wire 1 * cin $end
+$var wire 1 ! cout $end
+$var wire 1 " s $end
+$var wire 1 + s1 $end
+$scope module ha1 $end
+$var wire 1 & a $end
+$var wire 1 ' b $end
+$var wire 1 ( c $end
+$var wire 1 + s $end
+$scope module or1 $end
+$var wire 1 & a $end
+$var wire 1 ' b $end
+$var wire 1 + y $end
+$var wire 1 , y1 $end
+$scope module nr $end
+$var wire 1 & a $end
+$var wire 1 ' b $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / w $end
+$var wire 1 , y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 , a $end
+$var wire 1 0 gnd $end
+$var wire 1 1 vcc $end
+$var wire 1 + y $end
+$upscope $end
+$upscope $end
+$scope module an $end
+$var wire 1 & a $end
+$var wire 1 ' b $end
+$var wire 1 ( y $end
+$var wire 1 2 y1 $end
+$scope module n $end
+$var wire 1 & a $end
+$var wire 1 ' b $end
+$var wire 1 3 gnd $end
+$var wire 1 4 vdd $end
+$var wire 1 5 w $end
+$var wire 1 2 y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 2 a $end
+$var wire 1 6 gnd $end
+$var wire 1 7 vcc $end
+$var wire 1 ( y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module ha2 $end
+$var wire 1 + a $end
+$var wire 1 * b $end
+$var wire 1 ) c $end
+$var wire 1 " s $end
+$scope module or1 $end
+$var wire 1 + a $end
+$var wire 1 * b $end
+$var wire 1 " y $end
+$var wire 1 8 y1 $end
+$scope module nr $end
+$var wire 1 + a $end
+$var wire 1 * b $end
+$var wire 1 9 gnd $end
+$var wire 1 : vcc $end
+$var wire 1 ; w $end
+$var wire 1 8 y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 8 a $end
+$var wire 1 < gnd $end
+$var wire 1 = vcc $end
+$var wire 1 " y $end
+$upscope $end
+$upscope $end
+$scope module an $end
+$var wire 1 + a $end
+$var wire 1 * b $end
+$var wire 1 ) y $end
+$var wire 1 > y1 $end
+$scope module n $end
+$var wire 1 + a $end
+$var wire 1 * b $end
+$var wire 1 ? gnd $end
+$var wire 1 @ vdd $end
+$var wire 1 A w $end
+$var wire 1 > y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 > a $end
+$var wire 1 B gnd $end
+$var wire 1 C vcc $end
+$var wire 1 ) y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module orfa $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 ! y $end
+$var wire 1 D y1 $end
+$scope module nr $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 E gnd $end
+$var wire 1 F vcc $end
+$var wire 1 G w $end
+$var wire 1 D y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 D a $end
+$var wire 1 H gnd $end
+$var wire 1 I vcc $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1I
+0H
+xG
+1F
+0E
+xD
+1C
+0B
+xA
+1@
+0?
+x>
+1=
+0<
+x;
+1:
+09
+x8
+17
+06
+x5
+14
+03
+x2
+11
+00
+x/
+1.
+0-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#20
+0%
+0*
+18
+0"
+zA
+0$
+0'
+1,
+1;
+1>
+1D
+0!
+0)
+0+
+z5
+0#
+0&
+1/
+12
+1G
+0(
+#40
+1%
+1*
+08
+1"
+0A
+#60
+0%
+0*
+zA
+1$
+1'
+0,
+1+
+z;
+1>
+0)
+1D
+0!
+05
+#80
+1%
+1*
+0A
+0>
+1)
+0D
+1!
+#100
+0%
+0*
+zA
+1>
+0)
+1D
+0!
+0$
+0'
+z5
+1#
+1&
+z/
+12
+0(
+1G
+#120
+1%
+1*
+0A
+0>
+1)
+0D
+1!
+#140
+0%
+0*
+zA
+1>
+0)
+1$
+1'
+05
+02
+1(
+zG
+#160
+1%
+1*
+0A
+0>
+1)

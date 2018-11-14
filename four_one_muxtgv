@@ -1,0 +1,170 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x127fc90 .scope module, "four_one_muxtg_tb" "four_one_muxtg_tb" 2 1;
+ .timescale 0 0;
+v0x1299810_0 .var "a1", 0 0;
+v0x1299890_0 .var "b1", 0 0;
+v0x1299910_0 .var "c1", 0 0;
+v0x1299990_0 .var "d1", 0 0;
+RS_0x7f329e2500a8 .resolv tri, L_0x129abd0, L_0x129ac50, L_0x1299700, L_0x129ae00;
+v0x1299a10_0 .net8 "out", 0 0, RS_0x7f329e2500a8; 4 drivers, strength-aware
+v0x1299b20_0 .var "s1", 0 0;
+v0x1299ba0_0 .var "s2", 0 0;
+S_0x127fd80 .scope module, "tom" "four_one_mux_tg" 2 19, 3 1, S_0x127fc90;
+ .timescale 0 0;
+v0x12991d0_0 .net "a", 0 0, v0x1299810_0; 1 drivers
+v0x1299250_0 .net "b", 0 0, v0x1299890_0; 1 drivers
+v0x1299320_0 .net "c", 0 0, v0x1299910_0; 1 drivers
+v0x12993f0_0 .net "d", 0 0, v0x1299b20_0; 1 drivers
+RS_0x7f329e2500d8 .resolv tri, L_0x129a0a0, L_0x129a1b0, L_0x129a230, L_0x1298c20;
+v0x1299470_0 .net8 "l1", 0 0, RS_0x7f329e2500d8; 4 drivers, strength-aware
+RS_0x7f329e250018 .resolv tri, L_0x129a700, L_0x129a810, L_0x129a890, L_0x12982b0;
+v0x12994f0_0 .net8 "l2", 0 0, RS_0x7f329e250018; 4 drivers, strength-aware
+v0x12995b0_0 .alias "s1", 0 0, v0x12993f0_0;
+v0x1299630_0 .net "s2", 0 0, v0x1299ba0_0; 1 drivers
+v0x1299790_0 .alias "y", 0 0, v0x1299a10_0;
+S_0x1298320 .scope module, "to1tg" "two_one_muxtg" 3 7, 4 1, S_0x127fd80;
+ .timescale 0 0;
+v0x1298e60_0 .alias "a", 0 0, v0x12991d0_0;
+v0x1298ee0_0 .alias "b", 0 0, v0x1299320_0;
+v0x1298f90_0 .alias "s", 0 0, v0x12993f0_0;
+RS_0x7f329e250288 .resolv tri, L_0x1299f30, L_0x129a020, C4<z>, C4<z>;
+v0x1299010_0 .net8 "snot", 0 0, RS_0x7f329e250288; 2 drivers, strength-aware
+v0x12990c0_0 .alias "y", 0 0, v0x1299470_0;
+S_0x1298a90 .scope module, "n1muxtg" "cmos_not" 4 7, 5 1, S_0x1298320;
+ .timescale 0 0;
+L_0x1299f30 .functor NMOS 1, C8<770>, v0x1299b20_0, C4<0>, C4<0>;
+L_0x129a020 .functor PMOS 1, C8<771>, v0x1299b20_0, C4<0>, C4<0>;
+v0x1298b80_0 .alias "a", 0 0, v0x12993f0_0;
+v0x1298050_0 .net8 "gnd", 0 0, C8<770>; 1 drivers, strength-aware
+v0x1298d10_0 .net8 "vcc", 0 0, C8<771>; 1 drivers, strength-aware
+v0x1298db0_0 .alias "y", 0 0, v0x1299010_0;
+S_0x1298750 .scope module, "tg1" "transmission_gate" 4 12, 6 1, S_0x1298320;
+ .timescale 0 0;
+L_0x129a0a0 .functor NMOS 1, v0x1299810_0, RS_0x7f329e250288, C4<0>, C4<0>;
+L_0x129a1b0 .functor PMOS 1, v0x1299810_0, v0x1299b20_0, C4<0>, C4<0>;
+v0x1298840_0 .alias "a", 0 0, v0x12991d0_0;
+v0x12988e0_0 .alias "g1", 0 0, v0x1299010_0;
+v0x1298960_0 .alias "g2", 0 0, v0x12993f0_0;
+v0x12989e0_0 .alias "y", 0 0, v0x1299470_0;
+S_0x1298410 .scope module, "tg2" "transmission_gate" 4 18, 6 1, S_0x1298320;
+ .timescale 0 0;
+L_0x129a230 .functor NMOS 1, v0x1299910_0, v0x1299b20_0, C4<0>, C4<0>;
+L_0x1298c20 .functor PMOS 1, v0x1299910_0, RS_0x7f329e250288, C4<0>, C4<0>;
+v0x1298500_0 .alias "a", 0 0, v0x1299320_0;
+v0x1298580_0 .alias "g1", 0 0, v0x12993f0_0;
+v0x1298600_0 .alias "g2", 0 0, v0x1299010_0;
+v0x12986a0_0 .alias "y", 0 0, v0x1299470_0;
+S_0x1297440 .scope module, "to2tg" "two_one_muxtg" 3 13, 4 1, S_0x127fd80;
+ .timescale 0 0;
+v0x1297f50_0 .alias "a", 0 0, v0x1299250_0;
+v0x1297fd0_0 .alias "b", 0 0, v0x12993f0_0;
+v0x12980e0_0 .alias "s", 0 0, v0x12993f0_0;
+RS_0x7f329e250198 .resolv tri, L_0x1298ca0, L_0x129a680, C4<z>, C4<z>;
+v0x1298160_0 .net8 "snot", 0 0, RS_0x7f329e250198; 2 drivers, strength-aware
+v0x1298210_0 .alias "y", 0 0, v0x12994f0_0;
+S_0x1297be0 .scope module, "n1muxtg" "cmos_not" 4 7, 5 1, S_0x1297440;
+ .timescale 0 0;
+L_0x1298ca0 .functor NMOS 1, C8<770>, v0x1299b20_0, C4<0>, C4<0>;
+L_0x129a680 .functor PMOS 1, C8<771>, v0x1299b20_0, C4<0>, C4<0>;
+v0x1297cd0_0 .alias "a", 0 0, v0x12993f0_0;
+v0x1297d50_0 .net8 "gnd", 0 0, C8<770>; 1 drivers, strength-aware
+v0x1297dd0_0 .net8 "vcc", 0 0, C8<771>; 1 drivers, strength-aware
+v0x1297e50_0 .alias "y", 0 0, v0x1298160_0;
+S_0x12978a0 .scope module, "tg1" "transmission_gate" 4 12, 6 1, S_0x1297440;
+ .timescale 0 0;
+L_0x129a700 .functor NMOS 1, v0x1299890_0, RS_0x7f329e250198, C4<0>, C4<0>;
+L_0x129a810 .functor PMOS 1, v0x1299890_0, v0x1299b20_0, C4<0>, C4<0>;
+v0x1297990_0 .alias "a", 0 0, v0x1299250_0;
+v0x1297a10_0 .alias "g1", 0 0, v0x1298160_0;
+v0x1297a90_0 .alias "g2", 0 0, v0x12993f0_0;
+v0x1297b60_0 .alias "y", 0 0, v0x12994f0_0;
+S_0x1297530 .scope module, "tg2" "transmission_gate" 4 18, 6 1, S_0x1297440;
+ .timescale 0 0;
+L_0x129a890 .functor NMOS 1, v0x1299b20_0, v0x1299b20_0, C4<0>, C4<0>;
+L_0x12982b0 .functor PMOS 1, v0x1299b20_0, RS_0x7f329e250198, C4<0>, C4<0>;
+v0x1297620_0 .alias "a", 0 0, v0x12993f0_0;
+v0x12976a0_0 .alias "g1", 0 0, v0x12993f0_0;
+v0x1297720_0 .alias "g2", 0 0, v0x1298160_0;
+v0x12977a0_0 .alias "y", 0 0, v0x12994f0_0;
+S_0x1243690 .scope module, "to3tg" "two_one_muxtg" 3 19, 4 1, S_0x127fd80;
+ .timescale 0 0;
+v0x1297110_0 .alias "a", 0 0, v0x1299470_0;
+v0x1297190_0 .alias "b", 0 0, v0x12994f0_0;
+v0x1297240_0 .alias "s", 0 0, v0x1299630_0;
+RS_0x7f329e250078 .resolv tri, L_0x129aa40, L_0x129ab50, C4<z>, C4<z>;
+v0x12972c0_0 .net8 "snot", 0 0, RS_0x7f329e250078; 2 drivers, strength-aware
+v0x1297370_0 .alias "y", 0 0, v0x1299a10_0;
+S_0x1296d80 .scope module, "n1muxtg" "cmos_not" 4 7, 5 1, S_0x1243690;
+ .timescale 0 0;
+L_0x129aa40 .functor NMOS 1, C8<770>, v0x1299ba0_0, C4<0>, C4<0>;
+L_0x129ab50 .functor PMOS 1, C8<771>, v0x1299ba0_0, C4<0>, C4<0>;
+v0x1296e70_0 .alias "a", 0 0, v0x1299630_0;
+v0x1296f40_0 .net8 "gnd", 0 0, C8<770>; 1 drivers, strength-aware
+v0x1296fc0_0 .net8 "vcc", 0 0, C8<771>; 1 drivers, strength-aware
+v0x1297040_0 .alias "y", 0 0, v0x12972c0_0;
+S_0x1296990 .scope module, "tg1" "transmission_gate" 4 12, 6 1, S_0x1243690;
+ .timescale 0 0;
+L_0x129abd0 .functor NMOS 1, RS_0x7f329e2500d8, RS_0x7f329e250078, C4<0>, C4<0>;
+L_0x129ac50 .functor PMOS 1, RS_0x7f329e2500d8, v0x1299ba0_0, C4<0>, C4<0>;
+v0x1296a80_0 .alias "a", 0 0, v0x1299470_0;
+v0x1296b40_0 .alias "g1", 0 0, v0x12972c0_0;
+v0x1296bf0_0 .alias "g2", 0 0, v0x1299630_0;
+v0x1296ca0_0 .alias "y", 0 0, v0x1299a10_0;
+S_0x1243780 .scope module, "tg2" "transmission_gate" 4 18, 6 1, S_0x1243690;
+ .timescale 0 0;
+L_0x1299700 .functor NMOS 1, RS_0x7f329e250018, v0x1299ba0_0, C4<0>, C4<0>;
+L_0x129ae00 .functor PMOS 1, RS_0x7f329e250018, RS_0x7f329e250078, C4<0>, C4<0>;
+v0x1243870_0 .alias "a", 0 0, v0x12994f0_0;
+v0x12967a0_0 .alias "g1", 0 0, v0x1299630_0;
+v0x1296840_0 .alias "g2", 0 0, v0x12972c0_0;
+v0x12968e0_0 .alias "y", 0 0, v0x1299a10_0;
+    .scope S_0x127fc90;
+T_0 ;
+    %vpi_call 2 7 "$dumpfile", "four_one_muxtg";
+    %vpi_call 2 8 "$dumpvars", 1'sb0, S_0x127fc90;
+    %vpi_call 2 9 "$display", "A,B,C,D,S1,S2,Y";
+    %vpi_call 2 10 "$monitor", "%b %b %b %b %b %b %b", v0x1299810_0, v0x1299890_0, v0x1299910_0, v0x1299990_0, v0x1299b20_0, v0x1299ba0_0, v0x1299a10_0;
+    %delay 20, 0;
+    %set/v v0x1299810_0, 0, 1;
+    %set/v v0x1299890_0, 1, 1;
+    %set/v v0x1299910_0, 0, 1;
+    %set/v v0x1299990_0, 1, 1;
+    %set/v v0x1299b20_0, 0, 1;
+    %set/v v0x1299ba0_0, 0, 1;
+    %delay 20, 0;
+    %set/v v0x1299810_0, 0, 1;
+    %set/v v0x1299890_0, 1, 1;
+    %set/v v0x1299910_0, 0, 1;
+    %set/v v0x1299990_0, 1, 1;
+    %set/v v0x1299b20_0, 0, 1;
+    %set/v v0x1299ba0_0, 1, 1;
+    %delay 20, 0;
+    %set/v v0x1299810_0, 0, 1;
+    %set/v v0x1299890_0, 1, 1;
+    %set/v v0x1299910_0, 0, 1;
+    %set/v v0x1299990_0, 1, 1;
+    %set/v v0x1299b20_0, 1, 1;
+    %set/v v0x1299ba0_0, 0, 1;
+    %delay 20, 0;
+    %set/v v0x1299810_0, 0, 1;
+    %set/v v0x1299890_0, 0, 1;
+    %set/v v0x1299910_0, 0, 1;
+    %set/v v0x1299990_0, 1, 1;
+    %set/v v0x1299b20_0, 1, 1;
+    %set/v v0x1299ba0_0, 1, 1;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 7;
+    "N/A";
+    "<interactive>";
+    "four_one_muxtg_tb.c";
+    "four_one_muxtg.c";
+    "two_one_muxtg.c";
+    "cmos_not.c";
+    "transmission_gate.c";

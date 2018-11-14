@@ -1,0 +1,50 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x158b730 .scope module, "cmos_nor_tb" "cmos_nor_tb" 2 1;
+ .timescale 0 0;
+v0x15d0f80_0 .var "a1", 0 0;
+v0x15d1030_0 .var "b1", 0 0;
+RS_0x7f94ef109108 .resolv tri, L_0x15d12b0, L_0x15d1400, L_0x15d1560, C4<z>;
+v0x15d10e0_0 .net8 "out", 0 0, RS_0x7f94ef109108; 3 drivers, strength-aware
+S_0x158b820 .scope module, "n" "cmos_nor" 2 16, 3 1, S_0x158b730;
+ .timescale 0 0;
+L_0x15d12b0 .functor NMOS 1, C8<770>, v0x15d0f80_0, C4<0>, C4<0>;
+L_0x15d1400 .functor NMOS 1, C8<770>, v0x15d1030_0, C4<0>, C4<0>;
+L_0x15d14b0 .functor PMOS 1, C8<771>, v0x15d0f80_0, C4<0>, C4<0>;
+L_0x15d1560 .functor PMOS 1, L_0x15d14b0, v0x15d1030_0, C4<0>, C4<0>;
+v0x15c1010_0 .net "a", 0 0, v0x15d0f80_0; 1 drivers
+v0x15d0c10_0 .net "b", 0 0, v0x15d1030_0; 1 drivers
+v0x15d0cb0_0 .net8 "gnd", 0 0, C8<770>; 1 drivers, strength-aware
+v0x15d0d50_0 .net8 "vcc", 0 0, C8<771>; 1 drivers, strength-aware
+v0x15d0e00_0 .net8 "w", 0 0, L_0x15d14b0; 1 drivers, strength-aware
+v0x15d0ea0_0 .alias "y", 0 0, v0x15d10e0_0;
+    .scope S_0x158b730;
+T_0 ;
+    %vpi_call 2 6 "$dumpfile", "nortb";
+    %vpi_call 2 7 "$dumpvars", 1'sb0, S_0x158b730;
+    %vpi_call 2 8 "$display", "in1,in2,out";
+    %vpi_call 2 9 "$monitor", "%b %b %b", v0x15d0f80_0, v0x15d1030_0, v0x15d10e0_0;
+    %delay 20, 0;
+    %set/v v0x15d0f80_0, 0, 1;
+    %set/v v0x15d1030_0, 0, 1;
+    %delay 20, 0;
+    %set/v v0x15d0f80_0, 0, 1;
+    %set/v v0x15d1030_0, 1, 1;
+    %delay 20, 0;
+    %set/v v0x15d0f80_0, 1, 1;
+    %set/v v0x15d1030_0, 0, 1;
+    %delay 20, 0;
+    %set/v v0x15d0f80_0, 1, 1;
+    %set/v v0x15d1030_0, 1, 1;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "cmos_nor_tb.c";
+    "cmos_nor.c";

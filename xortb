@@ -1,0 +1,202 @@
+$date
+	Thu Aug 30 16:26:54 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module cmos_xor_tb $end
+$var wire 1 ! out $end
+$var reg 1 " a1 $end
+$var reg 1 # b1 $end
+$scope module xr $end
+$var wire 1 $ a $end
+$var wire 1 % b $end
+$var wire 1 ! y $end
+$var wire 1 & y1 $end
+$scope module xn $end
+$var wire 1 $ a $end
+$var wire 1 ' add1 $end
+$var wire 1 ( add2 $end
+$var wire 1 % b $end
+$var wire 1 ) inva $end
+$var wire 1 * invb $end
+$var wire 1 + prod1 $end
+$var wire 1 , prod2 $end
+$var wire 1 & y $end
+$scope module nt1 $end
+$var wire 1 $ a $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 ) y $end
+$upscope $end
+$scope module nt2 $end
+$var wire 1 % a $end
+$var wire 1 / gnd $end
+$var wire 1 0 vcc $end
+$var wire 1 * y $end
+$upscope $end
+$scope module or1 $end
+$var wire 1 ) a $end
+$var wire 1 % b $end
+$var wire 1 + y $end
+$var wire 1 1 y1 $end
+$scope module nr $end
+$var wire 1 ) a $end
+$var wire 1 % b $end
+$var wire 1 2 gnd $end
+$var wire 1 3 vcc $end
+$var wire 1 4 w $end
+$var wire 1 1 y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 1 a $end
+$var wire 1 5 gnd $end
+$var wire 1 6 vcc $end
+$var wire 1 + y $end
+$upscope $end
+$upscope $end
+$scope module or2 $end
+$var wire 1 $ a $end
+$var wire 1 * b $end
+$var wire 1 , y $end
+$var wire 1 7 y1 $end
+$scope module nr $end
+$var wire 1 $ a $end
+$var wire 1 * b $end
+$var wire 1 8 gnd $end
+$var wire 1 9 vcc $end
+$var wire 1 : w $end
+$var wire 1 7 y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 7 a $end
+$var wire 1 ; gnd $end
+$var wire 1 < vcc $end
+$var wire 1 , y $end
+$upscope $end
+$upscope $end
+$scope module ad $end
+$var wire 1 + a $end
+$var wire 1 , b $end
+$var wire 1 & y $end
+$var wire 1 = y1 $end
+$scope module n $end
+$var wire 1 + a $end
+$var wire 1 , b $end
+$var wire 1 > gnd $end
+$var wire 1 ? vdd $end
+$var wire 1 @ w $end
+$var wire 1 = y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 = a $end
+$var wire 1 A gnd $end
+$var wire 1 B vcc $end
+$var wire 1 & y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module nt $end
+$var wire 1 & a $end
+$var wire 1 C gnd $end
+$var wire 1 D vcc $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1D
+0C
+1B
+0A
+x@
+1?
+0>
+x=
+1<
+0;
+x:
+19
+08
+x7
+16
+05
+x4
+13
+02
+x1
+10
+0/
+1.
+0-
+x,
+x+
+x*
+x)
+z(
+z'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#20
+0#
+0%
+1*
+1,
+1&
+0!
+0@
+0=
+07
+0"
+0$
+1)
+1+
+01
+z4
+1:
+#40
+1#
+1%
+0*
+17
+0,
+z@
+1=
+0&
+1!
+#60
+0#
+0%
+1*
+11
+0+
+1"
+1$
+0)
+14
+07
+1,
+0@
+1=
+0&
+1!
+z:
+#80
+1#
+1%
+0*
+01
+1+
+0=
+1&
+0!

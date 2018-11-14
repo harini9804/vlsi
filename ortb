@@ -1,0 +1,71 @@
+$date
+	Thu Aug 30 16:27:02 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module cmos_or_tb $end
+$var wire 1 ! out $end
+$var reg 1 " a1 $end
+$var reg 1 # b1 $end
+$scope module or1 $end
+$var wire 1 $ a $end
+$var wire 1 % b $end
+$var wire 1 ! y $end
+$var wire 1 & y1 $end
+$scope module nr $end
+$var wire 1 $ a $end
+$var wire 1 % b $end
+$var wire 1 ' gnd $end
+$var wire 1 ( vcc $end
+$var wire 1 ) w $end
+$var wire 1 & y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 & a $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1+
+0*
+x)
+1(
+0'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#20
+0#
+0%
+1&
+0!
+0"
+0$
+1)
+#40
+1#
+1%
+0&
+1!
+#60
+0#
+0%
+1"
+1$
+z)
+#80
+1#
+1%

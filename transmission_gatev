@@ -1,0 +1,67 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x1625730 .scope module, "transmission_gate_tb" "transmission_gate_tb" 2 1;
+ .timescale 0 0;
+v0x166d3c0_0 .var "a", 0 0;
+v0x166d490_0 .var "g1", 0 0;
+v0x166d540_0 .var "g2", 0 0;
+RS_0x7fd69b7820a8 .resolv tri, L_0x166d6d0, L_0x166d820, C4<z>, C4<z>;
+v0x166d5f0_0 .net8 "y", 0 0, RS_0x7fd69b7820a8; 2 drivers, strength-aware
+S_0x1625820 .scope module, "tg" "transmission_gate" 2 21, 3 1, S_0x1625730;
+ .timescale 0 0;
+L_0x166d6d0 .functor NMOS 1, v0x166d3c0_0, v0x166d490_0, C4<0>, C4<0>;
+L_0x166d820 .functor PMOS 1, v0x166d3c0_0, v0x166d540_0, C4<0>, C4<0>;
+v0x1639840_0 .net "a", 0 0, v0x166d3c0_0; 1 drivers
+v0x166d1d0_0 .net "g1", 0 0, v0x166d490_0; 1 drivers
+v0x166d270_0 .net "g2", 0 0, v0x166d540_0; 1 drivers
+v0x166d310_0 .alias "y", 0 0, v0x166d5f0_0;
+    .scope S_0x1625730;
+T_0 ;
+    %vpi_call 2 6 "$dumpfile", "transmission_gate";
+    %vpi_call 2 7 "$dumpvars", 1'sb0, S_0x1625730;
+    %vpi_call 2 8 "$display", "A,G1,G2,Y";
+    %vpi_call 2 9 "$monitor", "%b %b %b %b", v0x166d3c0_0, v0x166d490_0, v0x166d540_0, v0x166d5f0_0;
+    %delay 20, 0;
+    %set/v v0x166d3c0_0, 0, 1;
+    %set/v v0x166d490_0, 0, 1;
+    %set/v v0x166d540_0, 0, 1;
+    %delay 20, 0;
+    %set/v v0x166d3c0_0, 0, 1;
+    %set/v v0x166d490_0, 0, 1;
+    %set/v v0x166d540_0, 1, 1;
+    %delay 20, 0;
+    %set/v v0x166d3c0_0, 0, 1;
+    %set/v v0x166d490_0, 1, 1;
+    %set/v v0x166d540_0, 0, 1;
+    %delay 20, 0;
+    %set/v v0x166d3c0_0, 0, 1;
+    %set/v v0x166d490_0, 1, 1;
+    %set/v v0x166d540_0, 1, 1;
+    %delay 20, 0;
+    %set/v v0x166d3c0_0, 1, 1;
+    %set/v v0x166d490_0, 0, 1;
+    %set/v v0x166d540_0, 0, 1;
+    %delay 20, 0;
+    %set/v v0x166d3c0_0, 1, 1;
+    %set/v v0x166d490_0, 0, 1;
+    %set/v v0x166d540_0, 1, 1;
+    %delay 20, 0;
+    %set/v v0x166d3c0_0, 1, 1;
+    %set/v v0x166d490_0, 1, 1;
+    %set/v v0x166d540_0, 0, 1;
+    %delay 20, 0;
+    %set/v v0x166d3c0_0, 1, 1;
+    %set/v v0x166d490_0, 1, 1;
+    %set/v v0x166d540_0, 1, 1;
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "transmission_gate_tb.c";
+    "transmission_gate.c";

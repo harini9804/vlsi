@@ -1,0 +1,171 @@
+$date
+	Thu Sep  6 16:05:22 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module four_one_muxtg_tb $end
+$var wire 1 ! out $end
+$var reg 1 " a1 $end
+$var reg 1 # b1 $end
+$var reg 1 $ c1 $end
+$var reg 1 % d1 $end
+$var reg 1 & s1 $end
+$var reg 1 ' s2 $end
+$scope module tom $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 * c $end
+$var wire 1 + d $end
+$var wire 1 , l1 $end
+$var wire 1 - l2 $end
+$var wire 1 + s1 $end
+$var wire 1 . s2 $end
+$var wire 1 ! y $end
+$scope module to1tg $end
+$var wire 1 ( a $end
+$var wire 1 * b $end
+$var wire 1 + s $end
+$var wire 1 / snot $end
+$var wire 1 , y $end
+$scope module n1muxtg $end
+$var wire 1 + a $end
+$var wire 1 0 gnd $end
+$var wire 1 1 vcc $end
+$var wire 1 / y $end
+$upscope $end
+$scope module tg1 $end
+$var wire 1 ( a $end
+$var wire 1 / g1 $end
+$var wire 1 + g2 $end
+$var wire 1 , y $end
+$upscope $end
+$scope module tg2 $end
+$var wire 1 * a $end
+$var wire 1 + g1 $end
+$var wire 1 / g2 $end
+$var wire 1 , y $end
+$upscope $end
+$upscope $end
+$scope module to2tg $end
+$var wire 1 ) a $end
+$var wire 1 + b $end
+$var wire 1 + s $end
+$var wire 1 2 snot $end
+$var wire 1 - y $end
+$scope module n1muxtg $end
+$var wire 1 + a $end
+$var wire 1 3 gnd $end
+$var wire 1 4 vcc $end
+$var wire 1 2 y $end
+$upscope $end
+$scope module tg1 $end
+$var wire 1 ) a $end
+$var wire 1 2 g1 $end
+$var wire 1 + g2 $end
+$var wire 1 - y $end
+$upscope $end
+$scope module tg2 $end
+$var wire 1 + a $end
+$var wire 1 + g1 $end
+$var wire 1 2 g2 $end
+$var wire 1 - y $end
+$upscope $end
+$upscope $end
+$scope module to3tg $end
+$var wire 1 , a $end
+$var wire 1 - b $end
+$var wire 1 . s $end
+$var wire 1 5 snot $end
+$var wire 1 ! y $end
+$scope module n1muxtg $end
+$var wire 1 . a $end
+$var wire 1 6 gnd $end
+$var wire 1 7 vcc $end
+$var wire 1 5 y $end
+$upscope $end
+$scope module tg1 $end
+$var wire 1 , a $end
+$var wire 1 5 g1 $end
+$var wire 1 . g2 $end
+$var wire 1 ! y $end
+$upscope $end
+$scope module tg2 $end
+$var wire 1 - a $end
+$var wire 1 . g1 $end
+$var wire 1 5 g2 $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+17
+06
+x5
+14
+03
+x2
+11
+00
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#20
+0'
+0.
+15
+0!
+0&
+0+
+1/
+12
+1-
+1%
+0$
+0*
+0,
+1#
+1)
+0"
+0(
+#40
+1'
+1.
+05
+1!
+#60
+0'
+0.
+15
+1&
+1+
+0/
+02
+1-
+0!
+#80
+1'
+1.
+05
+1!
+0#
+0)

@@ -1,0 +1,77 @@
+$date
+	Thu Sep 27 16:02:41 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module parity_check_tb $end
+$var wire 1 ! y $end
+$var reg 4 " a [3:0] $end
+$scope module pc $end
+$var wire 4 # a [3:0] $end
+$var wire 1 $ op $end
+$var reg 1 % y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0%
+x$
+bx #
+bx "
+0!
+$end
+#10
+0$
+b0 "
+b0 #
+#20
+1$
+b1 "
+b1 #
+#30
+b10 "
+b10 #
+#40
+0$
+b11 "
+b11 #
+#50
+1$
+b100 "
+b100 #
+#60
+0$
+b101 "
+b101 #
+#70
+b110 "
+b110 #
+#80
+1$
+b111 "
+b111 #
+#90
+1$
+b1000 "
+b1000 #
+#100
+0$
+b1001 "
+b1001 #
+#110
+b1010 "
+b1010 #
+#120
+1$
+b1011 "
+b1011 #
+#130
+0$
+b1100 "
+b1100 #
+#150

@@ -1,0 +1,104 @@
+$date
+	Thu Sep  6 16:17:22 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module two_one_muxtg_tb $end
+$var wire 1 ! y $end
+$var reg 1 " a $end
+$var reg 1 # b $end
+$var reg 1 $ s $end
+$scope module twoonetg $end
+$var wire 1 % a $end
+$var wire 1 & b $end
+$var wire 1 ' s $end
+$var wire 1 ( snot $end
+$var wire 1 ! y $end
+$scope module n1muxtg $end
+$var wire 1 ' a $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 ( y $end
+$upscope $end
+$scope module tg1 $end
+$var wire 1 % a $end
+$var wire 1 ( g1 $end
+$var wire 1 ' g2 $end
+$var wire 1 ! y $end
+$upscope $end
+$scope module tg2 $end
+$var wire 1 & a $end
+$var wire 1 ' g1 $end
+$var wire 1 ( g2 $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1*
+0)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#20
+0$
+0'
+1(
+0#
+0&
+0!
+0"
+0%
+#40
+1$
+1'
+0(
+#60
+0$
+0'
+1(
+1#
+1&
+0!
+#80
+1$
+1'
+0(
+1!
+#100
+0$
+0'
+1(
+0#
+0&
+1!
+1"
+1%
+#120
+1$
+1'
+0(
+0!
+#140
+0$
+0'
+1(
+1#
+1&
+1!
+#160
+1$
+1'
+0(

@@ -1,0 +1,441 @@
+$date
+	Wed Nov  7 20:46:55 2018
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module four_one_mux_tb $end
+$var wire 1 ! out $end
+$var reg 1 " a1 $end
+$var reg 1 # b1 $end
+$var reg 1 $ c1 $end
+$var reg 1 % d1 $end
+$var reg 1 & s1 $end
+$var reg 1 ' s2 $end
+$scope module tom $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 * c $end
+$var wire 1 + d $end
+$var wire 1 + s1 $end
+$var wire 1 , s2 $end
+$var wire 1 ! y $end
+$var wire 1 - y1 $end
+$var wire 1 . y2 $end
+$scope module m1 $end
+$var wire 1 ( a $end
+$var wire 1 ) b $end
+$var wire 1 / p1 $end
+$var wire 1 0 p2 $end
+$var wire 1 , s $end
+$var wire 1 1 snot $end
+$var wire 1 - y $end
+$scope module n1mux $end
+$var wire 1 , a $end
+$var wire 1 2 gnd $end
+$var wire 1 3 vcc $end
+$var wire 1 1 y $end
+$upscope $end
+$scope module an1mux $end
+$var wire 1 1 a $end
+$var wire 1 ( b $end
+$var wire 1 / y $end
+$var wire 1 4 y1 $end
+$scope module n $end
+$var wire 1 1 a $end
+$var wire 1 ( b $end
+$var wire 1 5 gnd $end
+$var wire 1 6 vdd $end
+$var wire 1 7 w $end
+$var wire 1 4 y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 4 a $end
+$var wire 1 8 gnd $end
+$var wire 1 9 vcc $end
+$var wire 1 / y $end
+$upscope $end
+$upscope $end
+$scope module an2mux $end
+$var wire 1 , a $end
+$var wire 1 ) b $end
+$var wire 1 0 y $end
+$var wire 1 : y1 $end
+$scope module n $end
+$var wire 1 , a $end
+$var wire 1 ) b $end
+$var wire 1 ; gnd $end
+$var wire 1 < vdd $end
+$var wire 1 = w $end
+$var wire 1 : y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 : a $end
+$var wire 1 > gnd $end
+$var wire 1 ? vcc $end
+$var wire 1 0 y $end
+$upscope $end
+$upscope $end
+$scope module ormux $end
+$var wire 1 / a $end
+$var wire 1 0 b $end
+$var wire 1 - y $end
+$var wire 1 @ y1 $end
+$scope module nr $end
+$var wire 1 / a $end
+$var wire 1 0 b $end
+$var wire 1 A gnd $end
+$var wire 1 B vcc $end
+$var wire 1 C w $end
+$var wire 1 @ y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 @ a $end
+$var wire 1 D gnd $end
+$var wire 1 E vcc $end
+$var wire 1 - y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module m2 $end
+$var wire 1 * a $end
+$var wire 1 + b $end
+$var wire 1 F p1 $end
+$var wire 1 G p2 $end
+$var wire 1 , s $end
+$var wire 1 H snot $end
+$var wire 1 . y $end
+$scope module n1mux $end
+$var wire 1 , a $end
+$var wire 1 I gnd $end
+$var wire 1 J vcc $end
+$var wire 1 H y $end
+$upscope $end
+$scope module an1mux $end
+$var wire 1 H a $end
+$var wire 1 * b $end
+$var wire 1 F y $end
+$var wire 1 K y1 $end
+$scope module n $end
+$var wire 1 H a $end
+$var wire 1 * b $end
+$var wire 1 L gnd $end
+$var wire 1 M vdd $end
+$var wire 1 N w $end
+$var wire 1 K y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 K a $end
+$var wire 1 O gnd $end
+$var wire 1 P vcc $end
+$var wire 1 F y $end
+$upscope $end
+$upscope $end
+$scope module an2mux $end
+$var wire 1 , a $end
+$var wire 1 + b $end
+$var wire 1 G y $end
+$var wire 1 Q y1 $end
+$scope module n $end
+$var wire 1 , a $end
+$var wire 1 + b $end
+$var wire 1 R gnd $end
+$var wire 1 S vdd $end
+$var wire 1 T w $end
+$var wire 1 Q y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 Q a $end
+$var wire 1 U gnd $end
+$var wire 1 V vcc $end
+$var wire 1 G y $end
+$upscope $end
+$upscope $end
+$scope module ormux $end
+$var wire 1 F a $end
+$var wire 1 G b $end
+$var wire 1 . y $end
+$var wire 1 W y1 $end
+$scope module nr $end
+$var wire 1 F a $end
+$var wire 1 G b $end
+$var wire 1 X gnd $end
+$var wire 1 Y vcc $end
+$var wire 1 Z w $end
+$var wire 1 W y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 W a $end
+$var wire 1 [ gnd $end
+$var wire 1 \ vcc $end
+$var wire 1 . y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module m3 $end
+$var wire 1 - a $end
+$var wire 1 . b $end
+$var wire 1 ] p1 $end
+$var wire 1 ^ p2 $end
+$var wire 1 + s $end
+$var wire 1 _ snot $end
+$var wire 1 ! y $end
+$scope module n1mux $end
+$var wire 1 + a $end
+$var wire 1 ` gnd $end
+$var wire 1 a vcc $end
+$var wire 1 _ y $end
+$upscope $end
+$scope module an1mux $end
+$var wire 1 _ a $end
+$var wire 1 - b $end
+$var wire 1 ] y $end
+$var wire 1 b y1 $end
+$scope module n $end
+$var wire 1 _ a $end
+$var wire 1 - b $end
+$var wire 1 c gnd $end
+$var wire 1 d vdd $end
+$var wire 1 e w $end
+$var wire 1 b y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 b a $end
+$var wire 1 f gnd $end
+$var wire 1 g vcc $end
+$var wire 1 ] y $end
+$upscope $end
+$upscope $end
+$scope module an2mux $end
+$var wire 1 + a $end
+$var wire 1 . b $end
+$var wire 1 ^ y $end
+$var wire 1 h y1 $end
+$scope module n $end
+$var wire 1 + a $end
+$var wire 1 . b $end
+$var wire 1 i gnd $end
+$var wire 1 j vdd $end
+$var wire 1 k w $end
+$var wire 1 h y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 h a $end
+$var wire 1 l gnd $end
+$var wire 1 m vcc $end
+$var wire 1 ^ y $end
+$upscope $end
+$upscope $end
+$scope module ormux $end
+$var wire 1 ] a $end
+$var wire 1 ^ b $end
+$var wire 1 ! y $end
+$var wire 1 n y1 $end
+$scope module nr $end
+$var wire 1 ] a $end
+$var wire 1 ^ b $end
+$var wire 1 o gnd $end
+$var wire 1 p vcc $end
+$var wire 1 q w $end
+$var wire 1 n y $end
+$upscope $end
+$scope module nt $end
+$var wire 1 n a $end
+$var wire 1 r gnd $end
+$var wire 1 s vcc $end
+$var wire 1 ! y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1s
+0r
+xq
+1p
+0o
+xn
+1m
+0l
+xk
+1j
+0i
+xh
+1g
+0f
+xe
+1d
+0c
+xb
+1a
+0`
+x_
+x^
+x]
+1\
+0[
+xZ
+1Y
+0X
+xW
+1V
+0U
+xT
+1S
+0R
+xQ
+1P
+0O
+xN
+1M
+0L
+xK
+1J
+0I
+xH
+xG
+xF
+1E
+0D
+xC
+1B
+0A
+x@
+1?
+0>
+x=
+1<
+0;
+x:
+19
+08
+x7
+16
+05
+x4
+13
+02
+x1
+x0
+x/
+x.
+x-
+x,
+x+
+x*
+x)
+x(
+x'
+x&
+x%
+x$
+x#
+x"
+x!
+$end
+#20
+0'
+0,
+11
+1:
+1@
+1b
+1n
+0!
+1q
+0]
+ze
+0-
+00
+1H
+0&
+0+
+1Q
+1W
+zk
+0.
+0G
+zT
+1_
+1h
+0^
+1%
+0$
+0*
+1K
+1Z
+0F
+zN
+1#
+1)
+0=
+0"
+0(
+14
+1C
+0/
+z7
+#40
+1'
+1,
+01
+0:
+10
+0@
+1-
+0e
+0b
+1]
+0n
+1!
+zq
+0H
+#60
+0'
+0,
+11
+1:
+00
+1@
+0-
+ze
+1H
+1&
+1+
+0T
+1Q
+0G
+1W
+0.
+zk
+1h
+0^
+0_
+1b
+0]
+1n
+0!
+1q
+#80
+1'
+1,
+01
+0H
+0Q
+1G
+0W
+1.
+0k
+0h
+1^
+0n
+1!
+0#
+0)
+z=
